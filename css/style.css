@@ -1,0 +1,514 @@
+:root{
+    --color-primary: #130d29;
+    --color-different: #e50914;
+    --color-secondary:#ffffff;
+    --color-light: #9d9c9d;
+    --color-extra-light: #757575;
+    --color-primary-light: #241c41;
+}
+
+body{
+    background-color: var(--color-primary) ;
+    color: var(--color-secondary);
+    font-family: 'Nunito Sans', sans-serif;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+h2{
+    font-size: 2rem;
+    font-style: regular;
+    
+}
+h3{
+    font-size: larger;
+}
+a{
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+section{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.textSmall{
+    font-size: 0.7em;
+}
+.different{
+    background: var(--color-different);
+}
+.primary{
+    background: var(--color-primary);
+}
+.light{
+    color: var(--color-light);
+}
+.extraLight{
+    color: var(--color-extra-light);
+}
+/*------------------------------------------------------------------------ Nav --------------------------------------------------------------------- */
+.nav{
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -3rem;
+    max-width: 1700px;
+    position: fixed;
+    width: 97%;
+    
+}
+.navRight{
+    display: flex;
+}
+.navText{
+    padding-top: 1.5rem;
+}
+.alt2{
+    display: none;
+}
+.logo_netflix{
+    
+    height: 2rem;
+    max-width: 10rem;
+    padding: 1rem 2rem;
+}
+/* BUTTON */
+.navBtn{
+    border-radius: 3px;
+    border: 0;
+    color: #ffffff;
+    display: inline-block;
+    height: max-content;
+    margin: 1rem 0.5rem;
+    padding: 0.5rem 1rem;
+}
+.navBtn:hover{
+    background-color: #f5242e;
+}
+.navBtn-secondary{
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-secondary);
+}
+.navBtn-secondary:hover{
+    background-color: var(--color-primary-light);
+    
+}
+/* ================================================================================ Header ================================================================ */
+.heroImage{
+      
+    background: linear-gradient(to left, rgba(255,255,255,0) 10%,
+    rgb(19, 13, 41,1)), url("https://occ-0-3270-2164.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABer7SeWc6FvkBqWtk61GwL7rshAEVCOARQZVTEJGnLXykYBlO4nbbr6gs7M650BjULuaN6hucXKr5xY2iqPAajrxXd70HawdJeuD.jpg?r=608");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 100%;
+    margin-left:-3rem;
+    margin-right: 0rem;
+    object-fit:cover ;
+    padding-bottom: 20vh;
+    padding-top: 2rem;
+    width: 108%;
+    
+}
+.mobileImage{
+    display: none;
+}
+.boxx{
+    border: 1px solid ;
+}
+.strangerThingsLogo{
+    max-width: 450px;
+    
+}
+.headingStranger{
+    font-size: x-large;
+    font-weight: bolder;
+    padding-top: 3rem;
+}
+.textWidth{
+    width: 40%;
+}
+.details{
+    margin-left: 3rem;
+    padding-top: 10rem;
+}
+
+/*------------------------------------------------- Watch----------------------------------------- */
+.watchNow{
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    text-align: center;
+
+}
+.watchNowText{
+    display: block;
+    padding: 0 1rem;
+    
+}
+
+/*-------------------------------- Video-----------------------------------*/
+
+.video{
+    
+    /* grid-template-columns: auto auto auto; */
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding-right: 4rem;
+    white-space: nowrap;
+    
+}
+.video  iframe{
+    display: inline-block;
+    height:300px;
+    padding-right: 1rem;
+    width:500px;
+}
+
+
+/* -----------------------------------------------Episodes--------------------------------------- */
+.episodeAll{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: auto auto auto;
+
+}
+
+.episodeImg{
+    width: 100%;
+}
+.episode-metadata{
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between ;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+.episodeAll p {
+    margin-top: 0;
+}
+.episodeAll h3{
+    margin-bottom: 0;
+}
+/* ----------------------------------------------More details -----------------------*/
+
+.moreDet h4{
+    color: var(--color-light);
+    margin-bottom: 0.5rem;
+}
+.moreDet h2{
+    margin-bottom: 0;
+}
+.castHead{
+    margin-bottom: 0;
+}
+.showTypes{
+    display: block;
+}
+
+.icons{
+    margin-right: 1rem;
+}
+.gridDetails {
+    
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+}
+.gridDetails ul{
+    padding-left: 0%;
+}
+
+.cast{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 0;
+    
+}
+
+/* ----------------------------------- More Like This -------------------------------------- */
+.moreSeries{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: auto auto auto;
+}
+.moreSeries img{
+    height: 200px;
+    width: 100%;
+    
+}
+
+/* -----------------------------------Coming Soon-------------------------------------- */
+
+.comingSoon{
+    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 0.5em;
+}
+
+
+
+
+/* Footer */
+footer{
+    margin-top: 7em;
+}
+.footerLinks{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 1rem;
+    
+}
+.btnFooter{
+    border: 0.5px ridge var(--color-extra-light);
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.footerNetflix{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.footerIcon{
+    padding-right: 1rem ;
+
+}
+.endLink:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+
+
+/*---------------------------------================================= MEDIA QUERIES ==============================--------------------------------- */
+@media screen and (min-width: 1439px){
+    /* body */
+   
+    body{
+        max-width: 1600px;
+        margin: auto;
+    }
+   
+    /* grids */
+    .moreSeries,.episodeAll, .gridDetails,.cast,.comingSoon{
+        grid-template-columns: auto auto auto auto;
+    }
+    .moreSeries img{
+        grid-template-columns: auto auto auto auto;
+        height: auto;
+    }
+    .showTypes{
+        max-width: 337px;
+    }
+    /* HEADER */
+    .heroImage{
+       
+        margin-left:-3rem;
+        margin-right: 0rem;       
+        padding-bottom: 20rem;
+    }
+    .mobileImage{
+        display: none;
+    }
+    .headingStranger{
+        padding-top: 4rem;
+    }
+    .textWidth{
+        width: 40%;
+    }
+    .details{
+        margin-left: 4rem;
+        padding-top: 13rem;
+    }
+}
+
+/* ============================================================ */
+@media screen and (min-width: 1400px) and (max-width:1700px){
+    body{
+        margin-left: 2rem;
+    }
+    .nav{
+        margin-left: 0rem;
+    }
+    .mobileImage{
+        display: none;
+    }
+}
+
+/* ======================================================== */
+@media screen and (min-width: 600px) and (max-width:1023px){
+    /* grids */
+    .moreSeries,.episodeAll, .gridDetails,.cast,.comingSoon{
+        grid-template-columns: auto auto ;
+    }
+    .moreSeries img{
+        grid-template-columns: auto auto ;
+        height: auto;
+    }
+    /* Body */
+    body{
+        margin-left: 2rem ;
+        margin-right: 2rem;
+        
+    }
+    /* Nav text */
+    .navText{
+        display: none;
+    }
+    .nav{
+        margin: 0 0 0 -1rem;
+    }
+    /* HEADER */
+    .heroImage{
+       
+        margin-left:-3rem;
+        margin-right: 0rem;       
+        padding-bottom: 5rem;
+    }
+    .mobileImage{
+        display: none;
+    }
+    .headingStranger{
+        padding-top: 2rem;
+    }
+    .textWidth{
+        width: 40%;
+    }
+    .details{
+        margin-left: 4rem;
+        padding-top: 10rem;
+    } 
+}
+/* ======================================================== */
+/* footer link MQ */
+@media screen and (max-width: 740px){
+    .footerLinks{
+        grid-template-columns: auto auto auto;
+    }
+    .mobileImage{
+        display: none;
+    }
+    .details{
+        padding-top: 5rem;
+    }
+}
+@media screen and (max-width: 550px){
+    .footerLinks{
+        grid-template-columns: auto auto;
+    }
+}
+
+
+/* ======================================================= */
+@media screen and (max-width: 599px){
+     /* Body */
+     body{
+        font-size: small;
+        margin-left: 1rem ;
+        margin-right: 1rem;
+        
+    }
+    h2{
+        font-size: 600;
+    }
+    h3{
+        font-size: 900;
+    }
+    h4{
+        font-size: medium;
+    }
+    section{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    /* Episodes */
+    .textWidth{
+        width: 100%;
+    }
+    .strangerThingsLogo{
+        width: 80%;
+    }
+    /* Header */
+    .heroImage{
+        background: var(--color-primary);
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .alt1{
+        display: none;
+    }
+    .alt2{
+        display: initial;
+    }
+    .mobileImage{
+        
+        background-repeat: no-repeat;
+        display: block;
+        height: 100%;
+        margin-left: 1rem;
+        object-fit: cover;
+        width: 100%;
+        
+    }
+    .details{
+        margin-left: 4rem;
+        padding-top: 2rem;
+    }
+    .headingStranger{
+        
+        padding-top: 1rem;
+    }
+    /* More like this */
+    .moreSeries{
+        gap: 1rem;
+    }
+    /* grids */
+    .moreSeries,.episodeAll, .gridDetails,.cast,.comingSoon{
+        grid-template-columns: auto ;
+    }
+    .moreSeries img{
+        grid-template-columns: auto ;
+        height: auto;
+    }
+    /* Nav */
+    .navText{
+        display: none;
+    }
+    .nav{
+        align-items: center;
+        background-color: var(--color-primary);
+        margin: 0 0 0 -1rem ;
+        opacity: 0.8;
+        top:0;
+    }
+    .navBtn{
+        opacity: 1;
+        padding: 0.3rem;
+    }
+    .logo_netflix{
+        height: 1.8rem;
+        padding: 0.5rem 0.5rem;
+    }
+    /* Images and Video width*/
+    .episodeImg, .moreSeries img{
+        height: auto;
+        width: 100%;
+        
+    } 
+    .video iframe{
+        height: 200px;
+        width: auto;
+    }
+    
+    
+}
+
+
+
+
